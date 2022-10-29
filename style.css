@@ -1,0 +1,90 @@
+:root {
+  --body-bg-color: #FAF7FD;
+  --purple: #BB99DD;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+
+  font-family: 'Poppins', sans-serif;
+
+  color: var(--purple);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.picture {
+  width: 12.5rem;
+  border-radius: 150px;
+  padding: 6px;
+  border: solid 1px var(--purple);
+}
+
+.title a {
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--purple);
+}
+
+.links {
+  max-width: 20.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.border {
+  border: 2px solid var(--purple);
+  border-radius: 4px;
+  min-width: 20.4rem;
+  padding: 12px;
+}
+
+.border:hover {
+  transition: 200ms;
+  background-color: #ecdaff;
+}
+
+.links> div> a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+} 
+
+.border a:hover {
+  transition: 200ms;
+  color: #c289fc;
+}
+
+.icons {
+  display: flex;
+  gap: 29px;
+  margin-top: 4rem;
+
+}
+
+.icons svg:hover {
+  cursor: pointer;
+  transition: 200ms;
+  fill: #ecdaff;
+}
